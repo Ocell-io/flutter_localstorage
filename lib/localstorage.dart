@@ -11,6 +11,8 @@ class LocalStorage {
 
   static final Map<String, LocalStorage> _cache = new Map();
 
+  static Map<String, LocalStorage> get cache => _cache;
+
   late DirUtils _dir;
 
   /// [ValueNotifier] which notifies about errors during storage initialization
